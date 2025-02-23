@@ -16,7 +16,7 @@ jobs:
     name: Check for unused dependencies
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: "${{ github.event.inputs.rev }}"
       - name: Install latest Rust
@@ -32,7 +32,7 @@ jobs:
     name: Check for crates with security vulnerabilities
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: "${{ github.event.inputs.rev }}"
       - name: Install latest Rust
@@ -48,7 +48,7 @@ jobs:
     name: Calculate coverage from tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: "${{ github.event.inputs.rev }}"
       - name: Execute tarpaulin
