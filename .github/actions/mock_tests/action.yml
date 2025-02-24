@@ -5,7 +5,7 @@ runs:
   using: "composite"
   steps:
     - name: Set up Python 3.7
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v5
       with:
         python-version: 3.7
     - name: Download Parsec Mock, install dependencies and execute all tests
