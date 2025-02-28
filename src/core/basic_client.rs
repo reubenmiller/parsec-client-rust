@@ -438,7 +438,7 @@ impl BasicClient {
             .list_keys()?
             .into_iter()
             .find(|key_info| key_info.name == key_name)
-            .ok_or(crate::error::Error::Client(ClientErrorKind::NotFound))?
+            .ok_or(Error::Client(ClientErrorKind::NotFound))?
             .attributes)
     }
 
