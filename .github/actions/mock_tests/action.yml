@@ -7,7 +7,7 @@ runs:
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
+        python-version: "3.10"
     - name: Download Parsec Mock, install dependencies and execute all tests
       run: |
         curl -s -N -L https://github.com/parallaxsecond/parsec-mock/archive/refs/tags/0.1.1.tar.gz | tar xz
